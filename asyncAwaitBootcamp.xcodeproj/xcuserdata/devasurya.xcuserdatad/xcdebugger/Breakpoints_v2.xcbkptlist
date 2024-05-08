@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FA885074-ED63-4427-8E24-A708E39C6D40"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C9A579B-20A1-48DC-A687-D493FA85A629"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "asyncAwaitBootcamp/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2C9A579B-20A1-48DC-A687-D493FA85A629 - 54ebb16b97c285e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;, SwiftUI.Text)&gt; in asyncAwaitBootcamp.ContentView.body.getter : some"
+                  moduleName = "asyncAwaitBootcamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devasurya/Desktop/Swift%20projects/asyncAwaitBootcamp/asyncAwaitBootcamp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "736">
+               </Location>
+               <Location
+                  uuid = "2C9A579B-20A1-48DC-A687-D493FA85A629 - 54ebb16b97c285e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;, SwiftUI.Text)&gt; in asyncAwaitBootcamp.ContentView.body.getter : some"
+                  moduleName = "asyncAwaitBootcamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devasurya/Desktop/Swift%20projects/asyncAwaitBootcamp/asyncAwaitBootcamp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "692">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A4D7FD1-CF4A-4C39-B57D-5578B0993F14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "asyncAwaitBootcamp/DataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "handleResponse(returnedData:returnedResponse:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4A4D7FD1-CF4A-4C39-B57D-5578B0993F14 - d707f3b8f2084c5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "asyncAwaitBootcamp.DataManger.handleResponse(returnedData: Swift.Optional&lt;Foundation.Data&gt;, returnedResponse: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "asyncAwaitBootcamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devasurya/Desktop/Swift%20projects/asyncAwaitBootcamp/asyncAwaitBootcamp/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "4A4D7FD1-CF4A-4C39-B57D-5578B0993F14 - d707f3b8f2084c7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "asyncAwaitBootcamp.DataManger.handleResponse(returnedData: Swift.Optional&lt;Foundation.Data&gt;, returnedResponse: Swift.Optional&lt;__C.NSURLResponse&gt;) -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "asyncAwaitBootcamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devasurya/Desktop/Swift%20projects/asyncAwaitBootcamp/asyncAwaitBootcamp/DataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

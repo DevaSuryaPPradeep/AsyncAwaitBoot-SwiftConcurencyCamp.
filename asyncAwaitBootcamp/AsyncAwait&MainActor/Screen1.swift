@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Screen1.swift
 //  asyncAwaitBootcamp
 //
 //  Created by Devasurya on 02/05/24.
@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ContentView: View {
+struct Screen1: View {
     
     @StateObject var viewmodelInstance = viewmodel()
     var body: some View {
@@ -29,5 +29,5 @@ struct ContentView: View {
     }
 }
 #Preview {
-    ContentView()
+    Screen1()
 }

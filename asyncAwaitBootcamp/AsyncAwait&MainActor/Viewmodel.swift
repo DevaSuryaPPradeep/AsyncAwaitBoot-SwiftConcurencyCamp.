@@ -28,7 +28,8 @@ class viewmodel: ObservableObject {
          //                }
          //            }
          //        }
-         //
+         */
+        /*
          //       DataManger.shared.downloadDataUsingCombine()
          //           .receive(on: DispatchQueue.main)
          //           .sink {  _ in

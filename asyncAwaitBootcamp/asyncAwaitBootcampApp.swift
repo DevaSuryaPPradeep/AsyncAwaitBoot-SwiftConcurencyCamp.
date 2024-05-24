@@ -11,7 +11,7 @@ import SwiftUI
 struct asyncAwaitBootcampApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Screen2()
         }
     }
 }

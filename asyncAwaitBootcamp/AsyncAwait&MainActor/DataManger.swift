@@ -18,8 +18,9 @@ class  DataManger {
     private init() {}
     
     /// URL Value.
+    let URLValue: String =   "https://picsum.photos/200"
     let urlValue =  URL(string: "https://picsum.photos/200")!
-    
+
     
     /// Function to extract data as an image if present else returns  a nil value.
     /// - Parameters:
@@ -40,7 +41,8 @@ class  DataManger {
     /// Function to download image from API.
     /// - Parameter completionHandler: Is an @escaping closure that returns either an image or a error.
     func downloadData(completionHandler:@escaping( _ imageValue: UIImage?,_ error: Error?)->()) {
-        URLSession.shared.dataTask(with: urlValue) {[weak self] data, response, error in
+        guard let URLString = URL(string: URLValue) else { return}
+        URLSession.shared.dataTask(with: URLString) {[weak self] data, response, error in
             let imageValue = self?.handleResponse(returnedData: data, returnedResponse: response)
             completionHandler(imageValue,error)
         }
@@ -57,7 +59,9 @@ class  DataManger {
             .eraseToAnyPublisher()
     }
     
-    func fetchData()  async throws -> UIImage? {
+    /// Function to perform a API call using async await.
+    /// - Returns: Returns a optional Image.
+    func fetchData() async throws -> UIImage? {
         do {
             let (data,response) = try await URLSession.shared.data(from: urlValue, delegate: nil)
             let image = handleResponse(returnedData: data, returnedResponse: response)
@@ -67,9 +71,5 @@ class  DataManger {
            throw error
         }
     }
-    
-    
-    
-    
 }
 

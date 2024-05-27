@@ -13,7 +13,7 @@ struct Screen3: View {
     @StateObject private var viewModelInstance = Screen3ViewModel()
     
     /// State variable for holding task related details.
-   @State private var taskDetails:  Task<(), Never>? = nil
+    @State private var taskDetails:  Task<(), Never>? = nil
     
     var body: some View {
         VStack(spacing: 40, content: {
@@ -24,15 +24,9 @@ struct Screen3: View {
                 Image(uiImage: imageValue)
             }
         })
-        .onAppear(perform: {
-         taskDetails = Task {
-               print("Image 1 loaded")
-                await  viewModelInstance.fetchImage()
-            }
-        })
-        .onDisappear(perform: {
-            taskDetails?.cancel()
-        })
+        .task {
+            await  viewModelInstance.fetchImage()
+        }
     }
 }
 
@@ -40,5 +34,9 @@ struct Screen3: View {
     Screen3()
 }
 
-/* Inorder to cancel the a task you can use task.cancel() */
+
+//About task & .task() modifier.
+/* Inorder to cancel the a task you can use task.cancel()
+ -> but here is a modifier called .task() which will perform the task mentioned inside when the view appears , without using .onappear() modifier, Moreover we don't need to cancel the task manually when the view disappears , this will be automatically cancelled by the swift when we are using .task() modifier.
+ */
 

@@ -22,7 +22,7 @@ struct Screen2: View {
         .onAppear(perform: {
             Task {
              await viewmodelInstance.addAuthor1()
-                viewmodelInstance.dataArray.append("Final value====>\(Thread.current)")
+//                viewmodelInstance.dataArray.append("Final value====>\(Thread.current)")
             }
         })
     }

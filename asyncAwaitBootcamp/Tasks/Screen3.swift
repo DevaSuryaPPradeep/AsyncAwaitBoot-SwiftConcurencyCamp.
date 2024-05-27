@@ -37,6 +37,6 @@ struct Screen3: View {
 
 //About task & .task() modifier.
 /* Inorder to cancel the a task you can use task.cancel()
- -> but here is a modifier called .task() which will perform the task mentioned inside when the view appears , without using .onappear() modifier, Moreover we don't need to cancel the task manually when the view disappears , this will be automatically cancelled by the swift when we are using .task() modifier.
+ -> but here is a modifier called .task() which will perform the task mentioned inside when the view appears , without using .onappear() modifier, Moreover we don't need to cancel the task manually when the view disappears , this will be automatically cancelled by the swiftUI when we are using .task() modifier.
  */
 

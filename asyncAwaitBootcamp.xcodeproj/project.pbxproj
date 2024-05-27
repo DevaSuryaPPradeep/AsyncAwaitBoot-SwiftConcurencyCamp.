@@ -15,6 +15,7 @@
 		5A6889682BE3A87200AE6E41 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6889672BE3A87200AE6E41 /* DataManger.swift */; };
 		5A9EEAC72C00B05C004D2D1D /* Screen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EEAC62C00B05C004D2D1D /* Screen3.swift */; };
 		5A9EEAC92C00B088004D2D1D /* Screen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EEAC82C00B088004D2D1D /* Screen3ViewModel.swift */; };
+		5A9EEB082C0463D5004D2D1D /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EEB072C0463D5004D2D1D /* OpeningView.swift */; };
 		5ADF98102BEB47CD006AABD1 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF980F2BEB47CD006AABD1 /* Screen2.swift */; };
 		5ADF98132BEB4833006AABD1 /* Screen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF98122BEB4833006AABD1 /* Screen2ViewModel.swift */; };
 		5ADF98152BEB4847006AABD1 /* Screen2Datamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF98142BEB4847006AABD1 /* Screen2Datamanager.swift */; };
@@ -30,6 +31,7 @@
 		5A6889672BE3A87200AE6E41 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
 		5A9EEAC62C00B05C004D2D1D /* Screen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3.swift; sourceTree = "<group>"; };
 		5A9EEAC82C00B088004D2D1D /* Screen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewModel.swift; sourceTree = "<group>"; };
+		5A9EEB072C0463D5004D2D1D /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
 		5ADF980F2BEB47CD006AABD1 /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
 		5ADF98122BEB4833006AABD1 /* Screen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewModel.swift; sourceTree = "<group>"; };
 		5ADF98142BEB4847006AABD1 /* Screen2Datamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2Datamanager.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5A9EEAC62C00B05C004D2D1D /* Screen3.swift */,
+				5A9EEB072C0463D5004D2D1D /* OpeningView.swift */,
 				5A9EEAC82C00B088004D2D1D /* Screen3ViewModel.swift */,
 			);
 			path = Tasks;
@@ -195,6 +198,7 @@
 				5A6889662BE3A48B00AE6E41 /* Viewmodel.swift in Sources */,
 				5A9EEAC72C00B05C004D2D1D /* Screen3.swift in Sources */,
 				5ADF98132BEB4833006AABD1 /* Screen2ViewModel.swift in Sources */,
+				5A9EEB082C0463D5004D2D1D /* OpeningView.swift in Sources */,
 				5ADF98152BEB4847006AABD1 /* Screen2Datamanager.swift in Sources */,
 				5A6889572BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift in Sources */,
 				5A9EEAC92C00B088004D2D1D /* Screen3ViewModel.swift in Sources */,

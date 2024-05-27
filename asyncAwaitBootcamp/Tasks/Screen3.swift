@@ -10,7 +10,10 @@ import SwiftUI
 struct Screen3: View {
     
     /// StateObject declaration.
-    @StateObject var viewModelInstance = Screen3ViewModel()
+    @StateObject private var viewModelInstance = Screen3ViewModel()
+    
+    /// State variable for holding task related details.
+   @State private var taskDetails:  Task<(), Never>? = nil
     
     var body: some View {
         VStack(spacing: 40, content: {
@@ -22,21 +25,20 @@ struct Screen3: View {
             }
         })
         .onAppear(perform: {
-            Task {
-                print(Thread.current)
-                print(Thread.threadPriority())
+         taskDetails = Task {
+               print("Image 1 loaded")
                 await  viewModelInstance.fetchImage()
             }
-            Task {
-                print(Thread.current)
-                print(Thread.threadPriority())
-                await viewModelInstance.fetchImage2()
-            }
         })
-        
+        .onDisappear(perform: {
+            taskDetails?.cancel()
+        })
     }
 }
 
 #Preview {
     Screen3()
 }
+
+/* Inorder to cancel the a task you can use task.cancel() */
+

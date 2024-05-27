@@ -8,11 +8,17 @@
 import Foundation
 import SwiftUI
 
+/// Viemodel
 class AsynLetViewModel: ObservableObject {
     
+    /// Published property declarations.
     @Published var dataArray: [UIImage] = []
+    
+    /// URL decalarations.
     let URLString = "https://picsum.photos/200"
     
+    /// Funtion to fetch images from the URL.
+    /// - Returns: Returns a UIImage.
     func downloadImage() async  throws -> UIImage {
         guard let URLValue = URL(string: URLString) else {
             throw URLError(.badURL)

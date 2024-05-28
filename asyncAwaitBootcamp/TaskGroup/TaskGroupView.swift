@@ -27,6 +27,9 @@ struct TaskGroupView: View {
                 }
             }
         }
+        .task {
+          await viewModelInstance.getImages()
+        }
     }
 }
 

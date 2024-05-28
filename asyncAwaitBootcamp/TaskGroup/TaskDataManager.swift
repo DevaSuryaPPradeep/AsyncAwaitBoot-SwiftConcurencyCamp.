@@ -37,10 +37,10 @@ class TaskDataManager {
     /// - Returns: An array of UIImages
     func fetchImageWithTaskGroup()async throws ->[UIImage] {
         return try await  withThrowingTaskGroup(of: UIImage.self) {[weak self] group in
-            guard let self = self else{ throw URLError(.badURL)}
             var imageHolder: [UIImage] = []
             let i = 1
             for _ in i...4{
+                guard let self = self else{ throw URLError(.badURL)}
                 group.addTask {
                     try await  self.downloadImage()
                 }
@@ -51,4 +51,22 @@ class TaskDataManager {
             return imageHolder
         }
     }
+    
+    /// Fucntion to fetch images concurrently using async let.
+    /// - Returns: An array of UIimages.
+    func fetchImagesWithAsyncLet() async throws ->[UIImage] {
+        async let fetchImage1 = downloadImage()
+        async let fetchImage2 = downloadImage()
+        let (image1,image2) =  await (try fetchImage1,try fetchImage2)
+        return [image1,image2]
+    }
 }
+
+
+/*
+ By using fetchImagesWithAsyncLet method we are performing two asynchronus API fetch request and awaits for the result altogether, while doing so we will be able to fetch the images concurrently using async let and present it altogether at once.
+ *///<- fetchImagesWithAsyncLet <Async let method implementation>
+
+/*
+ On using fetchImageWithTaskGroup() function we are implementing an asynchrous function using withThrowingTaskGroup() inbuilt funcionality , by which we will be adding each of Asynchronus functionality using a group (group.addTask), through this inbuit functionalit it will collect all the asynchrounus functionality and deploy it altogether concurrently.
+ *///<- fetchImageWithTaskGroup <withThrowingTaskGroup() method implementation>

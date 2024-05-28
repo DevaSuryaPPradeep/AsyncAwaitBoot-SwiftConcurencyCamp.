@@ -77,8 +77,8 @@
 		5A6889552BE3A36900AE6E41 /* asyncAwaitBootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				5A9EEB0E2C0493A4004D2D1D /* TaskGroup */,
 				5A6889562BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift */,
+				5A9EEB0E2C0493A4004D2D1D /* TaskGroup */,
 				5A9EEB092C047AC5004D2D1D /* Async let */,
 				5A9EEAC52C00B045004D2D1D /* Tasks */,
 				5ADF980E2BEB47A9006AABD1 /* Threading&Swiftconcurrency */,

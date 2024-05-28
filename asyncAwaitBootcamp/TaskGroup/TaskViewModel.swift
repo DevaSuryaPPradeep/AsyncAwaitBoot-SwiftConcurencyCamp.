@@ -11,11 +11,16 @@ import SwiftUI
 /// ViewModel.
 class TaskViewModel: ObservableObject {
     
+    /// Published property declarations.
     @Published var dataArray: [UIImage] = []
     
-    func getImages() async throws {
+    @MainActor
+    /// Function to update the UI using the value fetched from the fetchImagesWithAsyncLet and asigning it to the published property.
+    func getImages() async  {
         if let returnedResult = try? await TaskDataManager.shared.fetchImageWithTaskGroup() {
-            self.dataArray.append(contentsOf: returnedResult)
+            self.dataArray.append(contentsOf: returnedResult)}
+        else {
+            print(URLError(.badURL))
         }
     }
 }

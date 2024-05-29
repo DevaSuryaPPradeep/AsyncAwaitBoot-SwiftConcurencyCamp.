@@ -14,6 +14,7 @@ class TaskViewModel: ObservableObject {
     /// Published property declarations.
     @Published var dataArray: [UIImage] = []
     
+    
     @MainActor
     /// Function to update the UI using the value fetched from the fetchImagesWithAsyncLet and asigning it to the published property.
     func getImages() async  {

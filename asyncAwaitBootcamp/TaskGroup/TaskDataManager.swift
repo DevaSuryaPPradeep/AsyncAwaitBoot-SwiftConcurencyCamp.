@@ -39,7 +39,7 @@ class TaskDataManager {
          try await  withThrowingTaskGroup(of: UIImage.self) {[weak self] group ->[UIImage] in
             var imageHolder: [UIImage] = []
             let i = 1
-            for _ in i...8{
+            for i in i...8{
                 guard let self = self else{ throw URLError(.badURL)}
                 group.addTask {
                     if let resultantFunction = try? await self.downloadImage() {

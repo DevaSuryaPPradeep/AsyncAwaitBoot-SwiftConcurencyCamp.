@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// View
+/// View.
 struct AsyncLetView: View {
     
     /// StateObject declartions.

@@ -15,11 +15,12 @@ class TaskViewModel: ObservableObject {
     @Published var dataArray: [UIImage] = []
     
     
-    @MainActor
     /// Function to update the UI using the value fetched from the fetchImagesWithAsyncLet and asigning it to the published property.
     func getImages() async  {
         if let returnedResult = try? await TaskDataManager.shared.fetchImageWithTaskGroup() {
-            self.dataArray.append(contentsOf: returnedResult)}
+            await MainActor.run {
+                self.dataArray.append(contentsOf: returnedResult)}
+            }
         else {
             print(URLError(.badURL))
         }

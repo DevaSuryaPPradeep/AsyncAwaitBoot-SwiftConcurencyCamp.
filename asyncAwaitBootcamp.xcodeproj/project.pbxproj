@@ -16,6 +16,13 @@
 		5A7D03182C07245D00CA765D /* Screen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03172C07245D00CA765D /* Screen4.swift */; };
 		5A7D031A2C07246A00CA765D /* Screen4Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03192C07246A00CA765D /* Screen4Model.swift */; };
 		5A7D031C2C07251300CA765D /* Screen4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D031B2C07251300CA765D /* Screen4ViewModel.swift */; };
+		5A7D031F2C07370C00CA765D /* Screen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D031E2C07370C00CA765D /* Screen5.swift */; };
+		5A7D03212C07371C00CA765D /* Screen5ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03202C07371C00CA765D /* Screen5ViewModel.swift */; };
+		5A7D03232C07374200CA765D /* Screen5Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03222C07374200CA765D /* Screen5Model.swift */; };
+		5A7D03262C07507100CA765D /* Screen6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03252C07507100CA765D /* Screen6.swift */; };
+		5A7D03282C07512800CA765D /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03272C07512800CA765D /* DemoViewModel.swift */; };
+		5A7D032A2C07516400CA765D /* Screen6Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D03292C07516400CA765D /* Screen6Model.swift */; };
+		5A7D032C2C0756D000CA765D /* Screen6DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D032B2C0756D000CA765D /* Screen6DataManager.swift */; };
 		5A9EEAC72C00B05C004D2D1D /* Screen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EEAC62C00B05C004D2D1D /* Screen3.swift */; };
 		5A9EEAC92C00B088004D2D1D /* Screen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EEAC82C00B088004D2D1D /* Screen3ViewModel.swift */; };
 		5A9EEB082C0463D5004D2D1D /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EEB072C0463D5004D2D1D /* OpeningView.swift */; };
@@ -40,6 +47,13 @@
 		5A7D03172C07245D00CA765D /* Screen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4.swift; sourceTree = "<group>"; };
 		5A7D03192C07246A00CA765D /* Screen4Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4Model.swift; sourceTree = "<group>"; };
 		5A7D031B2C07251300CA765D /* Screen4ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4ViewModel.swift; sourceTree = "<group>"; };
+		5A7D031E2C07370C00CA765D /* Screen5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5.swift; sourceTree = "<group>"; };
+		5A7D03202C07371C00CA765D /* Screen5ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5ViewModel.swift; sourceTree = "<group>"; };
+		5A7D03222C07374200CA765D /* Screen5Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen5Model.swift; sourceTree = "<group>"; };
+		5A7D03252C07507100CA765D /* Screen6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen6.swift; sourceTree = "<group>"; };
+		5A7D03272C07512800CA765D /* DemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
+		5A7D03292C07516400CA765D /* Screen6Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen6Model.swift; sourceTree = "<group>"; };
+		5A7D032B2C0756D000CA765D /* Screen6DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen6DataManager.swift; sourceTree = "<group>"; };
 		5A9EEAC62C00B05C004D2D1D /* Screen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3.swift; sourceTree = "<group>"; };
 		5A9EEAC82C00B088004D2D1D /* Screen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewModel.swift; sourceTree = "<group>"; };
 		5A9EEB072C0463D5004D2D1D /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
@@ -83,8 +97,10 @@
 		5A6889552BE3A36900AE6E41 /* asyncAwaitBootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				5A7D03162C07243F00CA765D /* ExampleForTaskGroup */,
+				5A7D03242C07505100CA765D /* DemoOnTaskGroup+ unique results */,
 				5A6889562BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift */,
+				5A7D031D2C07367200CA765D /* TaskGroup + unique return types */,
+				5A7D03162C07243F00CA765D /* ExampleForTaskGroup */,
 				5A9EEB0E2C0493A4004D2D1D /* TaskGroup */,
 				5A9EEB092C047AC5004D2D1D /* Async let */,
 				5A9EEAC52C00B045004D2D1D /* Tasks */,
@@ -112,6 +128,27 @@
 				5A7D031B2C07251300CA765D /* Screen4ViewModel.swift */,
 			);
 			path = ExampleForTaskGroup;
+			sourceTree = "<group>";
+		};
+		5A7D031D2C07367200CA765D /* TaskGroup + unique return types */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D031E2C07370C00CA765D /* Screen5.swift */,
+				5A7D03202C07371C00CA765D /* Screen5ViewModel.swift */,
+				5A7D03222C07374200CA765D /* Screen5Model.swift */,
+			);
+			path = "TaskGroup + unique return types";
+			sourceTree = "<group>";
+		};
+		5A7D03242C07505100CA765D /* DemoOnTaskGroup+ unique results */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D03252C07507100CA765D /* Screen6.swift */,
+				5A7D03272C07512800CA765D /* DemoViewModel.swift */,
+				5A7D032B2C0756D000CA765D /* Screen6DataManager.swift */,
+				5A7D03292C07516400CA765D /* Screen6Model.swift */,
+			);
+			path = "DemoOnTaskGroup+ unique results";
 			sourceTree = "<group>";
 		};
 		5A9EEAC52C00B045004D2D1D /* Tasks */ = {
@@ -243,19 +280,26 @@
 			files = (
 				5A9EEB142C04950D004D2D1D /* TaskDataManager.swift in Sources */,
 				5A9EEB0B2C047AE4004D2D1D /* AsyncLetView.swift in Sources */,
+				5A7D032C2C0756D000CA765D /* Screen6DataManager.swift in Sources */,
 				5A9EEB122C04946B004D2D1D /* TaskViewModel.swift in Sources */,
 				5A9EEB0D2C048263004D2D1D /* AsynLetViewModel.swift in Sources */,
 				5A6889592BE3A36900AE6E41 /* Screen1.swift in Sources */,
 				5ADF98102BEB47CD006AABD1 /* Screen2.swift in Sources */,
+				5A7D03212C07371C00CA765D /* Screen5ViewModel.swift in Sources */,
+				5A7D031F2C07370C00CA765D /* Screen5.swift in Sources */,
 				5A6889662BE3A48B00AE6E41 /* Viewmodel.swift in Sources */,
+				5A7D03232C07374200CA765D /* Screen5Model.swift in Sources */,
 				5A7D031C2C07251300CA765D /* Screen4ViewModel.swift in Sources */,
 				5A9EEAC72C00B05C004D2D1D /* Screen3.swift in Sources */,
+				5A7D032A2C07516400CA765D /* Screen6Model.swift in Sources */,
 				5ADF98132BEB4833006AABD1 /* Screen2ViewModel.swift in Sources */,
 				5A9EEB102C0493B8004D2D1D /* TaskGroupView.swift in Sources */,
 				5A7D031A2C07246A00CA765D /* Screen4Model.swift in Sources */,
 				5A9EEB082C0463D5004D2D1D /* OpeningView.swift in Sources */,
+				5A7D03262C07507100CA765D /* Screen6.swift in Sources */,
 				5ADF98152BEB4847006AABD1 /* Screen2Datamanager.swift in Sources */,
 				5A7D03182C07245D00CA765D /* Screen4.swift in Sources */,
+				5A7D03282C07512800CA765D /* DemoViewModel.swift in Sources */,
 				5A6889572BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift in Sources */,
 				5A9EEAC92C00B088004D2D1D /* Screen3ViewModel.swift in Sources */,
 				5A6889682BE3A87200AE6E41 /* DataManger.swift in Sources */,

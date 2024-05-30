@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Model.
 struct Screen4Model: Identifiable,Codable,Hashable {
     let id: Int
     let title: String

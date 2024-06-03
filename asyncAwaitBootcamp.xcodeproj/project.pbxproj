@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A38BBC12C09A2DE0062C17F /* ContinuationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38BBC02C09A2DE0062C17F /* ContinuationViewModel.swift */; };
+		5A38BBC32C09A3270062C17F /* ContinuationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38BBC22C09A3270062C17F /* ContinuationView.swift */; };
 		5A6889572BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6889562BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift */; };
 		5A6889592BE3A36900AE6E41 /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6889582BE3A36900AE6E41 /* Screen1.swift */; };
 		5A68895B2BE3A36C00AE6E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A68895A2BE3A36C00AE6E41 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A38BBC02C09A2DE0062C17F /* ContinuationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuationViewModel.swift; sourceTree = "<group>"; };
+		5A38BBC22C09A3270062C17F /* ContinuationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuationView.swift; sourceTree = "<group>"; };
 		5A6889532BE3A36900AE6E41 /* asyncAwaitBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asyncAwaitBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6889562BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asyncAwaitBootcampApp.swift; sourceTree = "<group>"; };
 		5A6889582BE3A36900AE6E41 /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A38BBBF2C09A2BF0062C17F /* Continuation */ = {
+			isa = PBXGroup;
+			children = (
+				5A38BBC02C09A2DE0062C17F /* ContinuationViewModel.swift */,
+				5A38BBC22C09A3270062C17F /* ContinuationView.swift */,
+			);
+			path = Continuation;
+			sourceTree = "<group>";
+		};
 		5A68894A2BE3A36900AE6E41 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +110,9 @@
 		5A6889552BE3A36900AE6E41 /* asyncAwaitBootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				5A7D03242C07505100CA765D /* DemoOnTaskGroup+ unique results */,
+				5A38BBBF2C09A2BF0062C17F /* Continuation */,
 				5A6889562BE3A36900AE6E41 /* asyncAwaitBootcampApp.swift */,
+				5A7D03242C07505100CA765D /* DemoOnTaskGroup+ unique results */,
 				5A7D031D2C07367200CA765D /* TaskGroup + unique return types */,
 				5A7D03162C07243F00CA765D /* ExampleForTaskGroup */,
 				5A9EEB0E2C0493A4004D2D1D /* TaskGroup */,
@@ -281,12 +295,14 @@
 				5A9EEB142C04950D004D2D1D /* TaskDataManager.swift in Sources */,
 				5A9EEB0B2C047AE4004D2D1D /* AsyncLetView.swift in Sources */,
 				5A7D032C2C0756D000CA765D /* Screen6DataManager.swift in Sources */,
+				5A38BBC32C09A3270062C17F /* ContinuationView.swift in Sources */,
 				5A9EEB122C04946B004D2D1D /* TaskViewModel.swift in Sources */,
 				5A9EEB0D2C048263004D2D1D /* AsynLetViewModel.swift in Sources */,
 				5A6889592BE3A36900AE6E41 /* Screen1.swift in Sources */,
 				5ADF98102BEB47CD006AABD1 /* Screen2.swift in Sources */,
 				5A7D03212C07371C00CA765D /* Screen5ViewModel.swift in Sources */,
 				5A7D031F2C07370C00CA765D /* Screen5.swift in Sources */,
+				5A38BBC12C09A2DE0062C17F /* ContinuationViewModel.swift in Sources */,
 				5A6889662BE3A48B00AE6E41 /* Viewmodel.swift in Sources */,
 				5A7D03232C07374200CA765D /* Screen5Model.swift in Sources */,
 				5A7D031C2C07251300CA765D /* Screen4ViewModel.swift in Sources */,

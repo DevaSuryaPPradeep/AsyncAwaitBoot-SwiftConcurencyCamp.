@@ -17,7 +17,7 @@ class DemoViewModel: ObservableObject {
     
     func fetchDetails()  async throws -> [UserModel] {
         
-        let result =  try await withThrowingTaskGroup(of: DataModel.self) { group -> UserModel in
+        _ =  try await withThrowingTaskGroup(of: DataModel.self) { group -> UserModel in
             group.addTask {
                 print("Starting coin data fetch")
                 guard let URLValue = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h") else {

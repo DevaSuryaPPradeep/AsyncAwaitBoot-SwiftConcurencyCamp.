@@ -61,6 +61,7 @@ struct Screen6: View {
         }
     }
     
+    /// Fuction to call asynchronus task and implement a progress view.
     private func doTask() async {
         isLoading = true
         do {

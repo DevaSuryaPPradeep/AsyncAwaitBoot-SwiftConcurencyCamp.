@@ -16,7 +16,7 @@ class Screen4ViewModel: ObservableObject {
     /// Function to initiate multiiple api calls and collecting the result using the withThrowingtaskmodifier and there by creating a task group.
     func getData() async throws {
         do {
-            let result =  try await withThrowingTaskGroup(of: [Screen4Model].self, body: { group -> [Screen4Model] in
+            _ =  try await withThrowingTaskGroup(of: [Screen4Model].self, body: { group -> [Screen4Model] in
                 for i in 1...5 {
                     group.addTask {
                         guard let URLValue =  URL(string: "https://hws.dev/news-\(i).json") else {throw URLError(.badURL)}
